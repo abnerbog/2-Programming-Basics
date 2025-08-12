@@ -1,0 +1,9 @@
+site_name: Chapter 2 - Programming Basics
+nav:
+  - Home: index.md
+  - 'Programming Basics': '02-Programming_Basics_Demo_COMPLETE.qmd'
+  # ... other pages in your navigation
+
+plugins:
+  - mkquartodocs:
+      force_rebuild: true

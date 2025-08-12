@@ -1,0 +1,23 @@
+name: mkdocs-quarto-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10 # Or 3.11, compatible with your pyproject.toml
+  - pip
+  - quarto # Quarto CLI for rendering QMD files
+  - jupyter # Used by mkdocs-quarto for executing Python code cells
+  - pandas # For dataframe_example.qmd
+  - matplotlib # For matplotlib_example.qmd
+  - r-base # For R support
+  - r-tidyverse # For read_csv, dplyr functions in R code
+  - pip:
+    - mkdocs # The core MkDocs static site generator
+    - mkdocs-material # The theme specified in mkdocs.yml
+    - mkdocs-quarto # The plugin to handle Quarto files
+    - pymdown-extensions # For advanced Markdown features like superfences and highlighting
+    - mdformat # For markdown document formatting (from pyproject.toml check section)
+    - mdformat-black
+    - mdformat-config
+    - mdformat-beautysh
+    - mdformat-frontmatter
