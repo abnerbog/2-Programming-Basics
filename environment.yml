@@ -3,12 +3,9 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10 # Or 3.11, compatible with your pyproject.toml
+  - python=3.10
   - pip
-  - quarto # Quarto CLI for rendering QMD files
-  - jupyter # Used by mkdocs-quarto for executing Python code cells
-  - pandas # For dataframe_example.qmd
-  - matplotlib # For matplotlib_example.qmd
+  - r-quarto # Quarto CLI for rendering QMD files
   - r-base # For R support
   - r-tidyverse # For read_csv, dplyr functions in R code
   - pip:
