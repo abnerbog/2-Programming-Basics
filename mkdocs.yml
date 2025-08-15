@@ -1,9 +1,22 @@
 site_name: Chapter 2 - Programming Basics
 nav:
-  - Home: index.md
-  - 'Programming Basics': '02-Programming_Basics_Demo_COMPLETE.qmd'
+#  - Home: index.md
+  - 'Programming Basics Blank': '02-Programming_Basics_Demo_BLANK.md'
+  - 'Programming Basics Complete': '02-Programming_Basics_Demo_COMPLETE.md'
   # ... other pages in your navigation
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
 
 plugins:
   - mkquartodocs:
       force_rebuild: true
+
+hooks:
+  - scripts/strip_quarto_cell_notation.py

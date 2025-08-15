@@ -272,13 +272,12 @@ workings, whatever you like best.
 
 Use the assignment operator to save the summary table you just made.
 
-::: cell
-``` {.r .cell-code}
+
+```r
 # Notice when you do this it doesn't output the result... 
 # You can see what you did by clickon in stateRBIs in your environment panel
 # or just type stateRBIs
 ```
-:::
 
 ## What about NAs?
 
