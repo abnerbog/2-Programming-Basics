@@ -3,11 +3,11 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10
+  - python
   - pip
-  - r-quarto # Quarto CLI for rendering QMD files
   - r-base # For R support
   - r-tidyverse # For read_csv, dplyr functions in R code
+  - quarto
   - pip:
     - mkdocs # The core MkDocs static site generator
     - mkdocs-material # The theme specified in mkdocs.yml
