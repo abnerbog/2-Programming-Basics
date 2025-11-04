@@ -1,5 +1,17 @@
 ---
 title: "R Tidyverse Programming Basics"
+date: today
+author:
+  - name: JP Gannon
+    id: jp
+    orcid: 0000-0002-4595-3214
+    email: jpgannon@vt.edu
+    url: https://jpgannon.github.io/
+    affiliation: 
+      - name: Virginia Tech
+        city: Blacksburg
+        state: VA
+        url: www.vt.edu
 format:
   html: 
     self-contained: true
