@@ -2,10 +2,7 @@
 title: "R Tidyverse Programming Basics"
 date: today
 github: https://github.com/VT-Hydroinformatics/2-Programming-Basics
-license:
-  content: CC-BY-4.0
-  code: MIT
-authors:
+author:
   - name: JP Gannon
     id: jp
     orcid: 0000-0002-4595-3214
@@ -17,6 +14,9 @@ authors:
         city: Blacksburg
         state: VA
         url: www.vt.edu
+format:
+  html: 
+    self-contained: true
 ---
 
 Get this document and a version with empty code chunks at the template repository on github: <https://github.com/VT-Hydroinformatics/2-Programming-Basics>
