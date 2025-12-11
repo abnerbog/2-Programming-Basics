@@ -1,11 +1,9 @@
 ---
 title: "Chapter 2: R Tidyverse Programming Basics"
 date: today
-github: https://github.com/VT-Hydroinformatics/2-Programming-Basics
 author:
   - name: JP Gannon
     orcid: 0000-0002-4595-3214
-    github: jpgannon
     url: https://jpgannon.github.io/
     affiliation: 
       - name: Virginia Tech
@@ -101,7 +99,7 @@ name <- "JP"
 
 ## Using functions
 
-![](images/Function%20syntax.png)
+![](images/Function syntax.png)
 
 As an example, let's try the seq() function, which creates a sequence of numbers.
 
@@ -167,7 +165,7 @@ We will demo five functions below:
 
 With all of these, the first argument is the data and then the arguments after that specify what you want the function to do.
 
-![](images/dplyr%20functions.png)
+![](images/dplyr functions.png)
 
 ## Filter
 
