@@ -99,7 +99,7 @@ name <- "JP"
 
 ## Using functions
 
-![](images/Function syntax.png)
+![Function syntax](images/Function syntax.png "Function syntax")\
 
 As an example, let's try the seq() function, which creates a sequence of numbers.
 
@@ -165,7 +165,7 @@ We will demo five functions below:
 
 With all of these, the first argument is the data and then the arguments after that specify what you want the function to do.
 
-![](images/dplyr functions.png)
+![Dpylr functions](images/dplyr functions.png "Dpylr functions")\
 
 ## Filter
 
