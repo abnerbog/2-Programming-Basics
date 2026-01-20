@@ -1,8 +1,23 @@
 ---
-title: "R Tidyverse Programming Basics"
+title: "Chapter 2: R Tidyverse Programming Basics"
+date: today
+author:
+  - name: JP Gannon
+    orcid: 0000-0002-4595-3214
+    url: https://jpgannon.github.io/
+    affiliation: 
+      - name: Virginia Tech
+        url: https://www.vt.edu/
 format:
   html: 
     self-contained: true
+  ipynb:
+    nb-frontmatter: true
+    jupyter:
+      kernel: ir
+      ipynb-shell-interactivity: all
+execute: 
+  enabled: true
 ---
 
 Get this document and a version with empty code chunks at the template repository on github: <https://github.com/VT-Hydroinformatics/2-Programming-Basics>
@@ -84,7 +99,9 @@ name <- "JP"
 
 ## Using functions
 
-![](images/Function%20syntax.png)
+![](images/Function syntax.png "Function syntax")
+
+_Function syntax_
 
 As an example, let's try the seq() function, which creates a sequence of numbers.
 
@@ -150,7 +167,9 @@ We will demo five functions below:
 
 With all of these, the first argument is the data and then the arguments after that specify what you want the function to do.
 
-![](images/dplyr%20functions.png)
+![](images/dplyr functions.png "Dpylr functions")
+
+_Dpylr functions_
 
 ## Filter
 
