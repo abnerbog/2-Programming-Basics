@@ -1,31 +1,10 @@
 ---
 title: "Chapter 2: R Tidyverse Programming Basics"
 date: today
-author:
-  - name: JP Gannon
-    orcid: 0000-0002-4595-3214
-    url: https://jpgannon.github.io/
-    affiliation: 
-      - name: Virginia Tech
-        url: https://www.vt.edu/
-format:
-  html:
-    self-contained: true
-  ipynb:
-    nb-frontmatter: true
+author: JP Gannon
+format: gfm
 execute:
   enabled: true
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .qmd
-      format_name: quarto
-      format_version: '1.0'
-      jupytext_version: 1.19.1
-  kernelspec:
-    display_name: R
-    language: R
-    name: ir
 ---
 
 Get this document and a version with empty code chunks at the template repository on github: <https://github.com/VT-Hydroinformatics/2-Programming-Basics>
@@ -146,7 +125,7 @@ rbi <- read_csv("Flashy_Dat_Subset.csv")
 Good question. It's a fancy way to store data that works well with tidyverse functions. Let's look at the rbi tibble.
 
 ```{r}
-print(head(rbi))
+head(rbi)
 ```
 
 Now read in the same data with read.csv() which will NOT read the data as a tibble. How is it different? Output each one in the Console.
@@ -158,7 +137,7 @@ Types: int, dbl, fctr, char, logical
 ```{r}
 rbi_NT <- read.csv("Flashy_Dat_Subset.csv")
 
-print(head(rbi_NT))
+head(rbi_NT)
 ```
 
 ## Data wrangling in dplyr
@@ -193,7 +172,7 @@ Operators:\
 \| or
 
 ```{r echo=TRUE}
-print(filter(rbi, STATE == "ME"))
+filter(rbi, STATE == "ME")
 ```
 
 **Multiple conditions**
@@ -202,7 +181,7 @@ How many gages are there in Maine with an rbi greater than 0.25
 
 ```{r echo=TRUE}
 
-print(filter(rbi, STATE == "ME" & RBI > 0.25))
+filter(rbi, STATE == "ME" & RBI > 0.25)
 
 ```
 
@@ -213,9 +192,9 @@ Arrange sorts by a column in your dataset.
 Sort the rbi data by the RBI column in ascending and then descending order
 
 ```{r echo=TRUE}
-print(arrange(rbi, RBI))
+arrange(rbi, RBI)
 
-print(arrange(rbi, desc(RBI)))
+arrange(rbi, desc(RBI))
 
 ```
 
@@ -230,9 +209,9 @@ Note they come back in the order you put them in in the function, not the order 
 You can do a lot more with select, especially when you need to select a bunch of columns but don't want to type them all out. But we don't need to cover all that today. For a taste though, if you want to select a group of columns you can specify the first and last with a colon in between (first:last) and it'll return all of them. Select the rbi columns from site_no to DRAIN_SQKM.
 
 ```{r echo=TRUE}
-print(select(rbi, STANAME, STATE, RBI))
+select(rbi, STANAME, STATE, RBI)
 
-print(select(rbi, site_no:DRAIN_SQKM))
+select(rbi, site_no:DRAIN_SQKM)
 ```
 
 ## Mutate
@@ -242,13 +221,13 @@ Use mutate to add new columns based on additional ones. Common uses are to creat
 Create a new column in rbi called T_RANGE by subtracting T_MIN_SITE from T_MAX_SITE
 
 ```{r echo=TRUE}
-print(mutate(rbi, T_RANGE = T_MAX_SITE - T_MIN_SITE))
+mutate(rbi, T_RANGE = T_MAX_SITE - T_MIN_SITE)
 ```
 
 When downloading data from the USGS through R, you have to enter the gage ID as a character, even though they are all made up of numbers. So to practice doing this, update the site_no column to be a character datatype
 
 ```{r echo=TRUE}
-print(mutate(rbi, site_no = as.character(site_no)))
+mutate(rbi, site_no = as.character(site_no))
 ```
 
 ## Summarize
@@ -258,14 +237,14 @@ Summarize will perform an operation on all of your data, or groups if you assign
 Use summarize to compute the mean, min, and max rbi
 
 ```{r echo=TRUE}
-print(summarize(rbi, meanrbi = mean(RBI), maxrbi = max(RBI), minrbi = min(RBI)))
+summarize(rbi, meanrbi = mean(RBI), maxrbi = max(RBI), minrbi = min(RBI))
 ```
 
 Now use the group function to group by state and then summarize in the same way as above
 
 ```{r echo=TRUE}
 rbistate <- group_by(rbi, STATE)
-print(summarize(rbistate, meanrbi = mean(RBI), maxrbi = max(RBI), minrbi = min(RBI)))
+summarize(rbistate, meanrbi = mean(RBI), maxrbi = max(RBI), minrbi = min(RBI))
 ```
 
 ## Multiple operations with pipes
@@ -302,9 +281,9 @@ Much easier to follow!
 Take the groupby and summarize code from above and perform the operation using the pipe
 
 ```{r echo=TRUE}
-print(rbi |>
+rbi |>
   group_by(STATE) |>
-  summarize(meanrbi = mean(RBI), maxrbi = max(RBI), minrbi = min(RBI)))
+  summarize(meanrbi = mean(RBI), maxrbi = max(RBI), minrbi = min(RBI))
 
 ```
 
@@ -329,7 +308,7 @@ stateRBIs <- rbi |>
 # You can see what you did by clickon in stateRBIs in your environment panel
 # or just type stateRBIs
 
-print(stateRBIs)
+stateRBIs
 ```
 
 ## What about NAs?
@@ -338,7 +317,7 @@ We will talk more about this when we discuss stats, but some operations will fai
 
 ```{r echo=TRUE}
 x <- c(1,2,3,4,NA)
-print(mean(x, na.rm = TRUE))
+mean(x, na.rm = TRUE)
 ```
 
 ## What are some things you think I'll ask you to do for the activity next class?
