@@ -1,22 +1,9 @@
 ---
 title: "Chapter 2: R Tidyverse Programming Basics"
 date: today
-author:
-  - name: JP Gannon
-    orcid: 0000-0002-4595-3214
-    url: https://jpgannon.github.io/
-    affiliation: 
-      - name: Virginia Tech
-        url: https://www.vt.edu/
-format:
-  html: 
-    self-contained: true
-  ipynb:
-    nb-frontmatter: true
-    jupyter:
-      kernel: ir
-      ipynb-shell-interactivity: all
-execute: 
+author: JP Gannon
+format: gfm
+execute:
   enabled: true
 ---
 
@@ -137,7 +124,7 @@ rbi <- read_csv("Flashy_Dat_Subset.csv")
 
 Good question. It's a fancy way to store data that works well with tidyverse functions. Let's look at the rbi tibble.
 
-```{r echo=TRUE}
+```{r}
 head(rbi)
 ```
 
@@ -147,7 +134,7 @@ Knowing the data type for each column is super helpful for a few reasons.... let
 
 Types: int, dbl, fctr, char, logical
 
-```{r echo=TRUE}
+```{r}
 rbi_NT <- read.csv("Flashy_Dat_Subset.csv")
 
 head(rbi_NT)
