@@ -82,7 +82,7 @@ R can be cryptic with it's error messages or other responses, but once you get u
 
 ## Using functions
 
-![](images/Function%20syntax.png)
+![](images/Function-syntax.png)
 
 As an example, let's try the seq() function, which creates a sequence of numbers.
 
@@ -133,7 +133,7 @@ We will demo five functions below:
 
 With all of these, the first argument is the data and then the arguments after that specify what you want the function to do.
 
-![](images/dplyr%20functions.png)
+![](images/dplyrfunctions.png)
 
 ## Filter
 
