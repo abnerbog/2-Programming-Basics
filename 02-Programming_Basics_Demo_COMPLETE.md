@@ -1,6 +1,6 @@
 # Chapter 2: R Tidyverse Programming Basics
 JP Gannon
-2026-02-15
+2026-02-16
 
 Get this document and a version with empty code chunks at the template
 repository on github:
@@ -113,7 +113,7 @@ name <- "JP"
 
 ## Using functions
 
-![](images/Function%20syntax.png "Function-syntax")
+![](images/Function-syntax.png "Function syntax")
 
 *Function syntax*
 

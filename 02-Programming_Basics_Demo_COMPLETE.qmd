@@ -86,7 +86,7 @@ name <- "JP"
 
 ## Using functions
 
-![](images/Function syntax.png "Function-syntax")
+![](images/Function-syntax.png "Function syntax")
 
 _Function syntax_
 
