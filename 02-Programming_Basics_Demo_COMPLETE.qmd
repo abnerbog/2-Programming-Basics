@@ -1,10 +1,9 @@
 ---
 title: "Chapter 2: R Tidyverse Programming Basics"
-date: today
-author: JP Gannon
-format: gfm
-execute:
-  enabled: true
+date: 2026-03-23
+authors:
+  - id: jpgannon
+github: https://github.com/VT-Hydroinformatics/2-Programming-Basics
 ---
 
 Get this document and a version with empty code chunks at the template repository on github: <https://github.com/VT-Hydroinformatics/2-Programming-Basics>
