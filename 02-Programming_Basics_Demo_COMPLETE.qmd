@@ -20,6 +20,7 @@ doi: https://doi.org/10.4211/hs.fccb13786ed54a7e8be369a316b47632
 venue:
   title: View Resource on HydroShare
   url: https://hydroshare.org/resource/fccb13786ed54a7e8be369a316b47632/
+github: https://github.com/VT-Hydroinformatics/2-Programming-Basics
 downloads:
   - file: 02-Programming_Basics_Demo_COMPLETE.md
   - file: 02-Programming_Basics_Demo_COMPLETE.pdf
