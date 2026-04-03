@@ -3,7 +3,26 @@ title: 'Chapter 2: R Tidyverse Programming Basics'
 date: 2026-03-23T00:00:00.000Z
 authors:
   - id: jpgannon
-github: https://github.com/VT-Hydroinformatics/2-Programming-Basics
+    name: JP Gannon
+    email: jpgannon@vt.edu
+    github: jpgannon
+    orcid: 0000-0002-4595-3214
+    corresponding: true
+    url: https://jpgannon.github.io/
+    affiliations:
+      - vt-tech
+affiliations:
+  - id: vt-tech
+    name: Virginia Tech
+    url: https://www.vt.edu/
+subject: Courseware
+doi: https://doi.org/10.4211/hs.fccb13786ed54a7e8be369a316b47632
+venue:
+  title: View Resource on HydroShare
+  url: https://hydroshare.org/resource/fccb13786ed54a7e8be369a316b47632/
+downloads:
+  - file: 02-Programming_Basics_Demo_COMPLETE.md
+  - file: 02-Programming_Basics_Demo_COMPLETE.pdf
 ---
 
 
